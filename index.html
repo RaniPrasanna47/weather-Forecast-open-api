@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast</title>  
+  <link rel="stylesheet" href="style.css">      
+</head>
+
+<body>
+  <div class="weather-app">
+    <header class="app-header">
+      <h1>WeatherNow 🌤</h1>
+      <div class="search-bar">
+        <input type="text" placeholder="Enter city name..." id="city-input">
+        <button id="search-btn">Search</button>
+      </div>
+    </header>
+    <div class="weather-display">
+      <div id="loading-spinner" class="loader"></div> 
+      <div class="weather-card">
+        <h2 id="city-name"></h2>
+        <div id="weather-info">
+          <p id="temp">--°C</p>
+          <p id="description">Weather description</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>Powered by OpenWeather API</p>
+    </footer>
+  </div>
+  <script src="script.js">  </script>
+</body>
+</html>
