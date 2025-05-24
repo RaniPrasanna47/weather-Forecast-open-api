@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WeatherNow 🌤</title>
+  <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+  <div class="weather-app">
+    <header class="app-header">
+      <h1>WeatherNow 🌤</h1>
+      <div class="search-bar">
+        <input type="text" placeholder="Enter city name..." id="city-input" />
+        <button id="search-btn">Search</button>
+      </div>
+    </header>
+
+    <div class="weather-display">
+      <div id="loading-spinner" class="loader"></div>
+      <div class="weather-card">
+        <h2 id="city-name"></h2>
+        <img id="icon" src="" alt="Weather Icon">
+        <div class="weather-details">
+          <p id="description">Description</p>
+          <p id="temp">--°C</p>
+          <p id="humidity">Humidity: --%</p>
+          <p id="wind">Wind: -- km/h</p>
+          <p id="aqi">AQI: --</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Powered by OpenWeather API</p>
+    </footer>
+  </div>
+
+  <script src="script.js"> </script>
+</body>
+</html>
